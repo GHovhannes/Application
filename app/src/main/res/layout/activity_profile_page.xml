@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2F8B86"
+    tools:context=".ProfilePageActivity">
+
+    <ImageView
+        android:id="@+id/profile"
+        android:layout_width="123dp"
+        android:layout_height="106dp"
+        android:layout_marginTop="144dp"
+        android:layout_marginBottom="4dp"
+        android:background="#EEC7AA"
+        android:padding="2dp"
+        android:rotationX="21"
+        android:src="@drawable/profile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_insta"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/history"
+        android:layout_width="120dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="147dp"
+        android:layout_marginBottom="12dp"
+        android:src="@drawable/history"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_insta" />
+
+    <ImageView
+        android:id="@+id/search"
+        android:layout_width="161dp"
+        android:layout_height="123dp"
+        android:src="@drawable/search"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/user_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="216dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        tools:ignore="MissingConstraints"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="159dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="191dp"
+        android:text="MY PROFILE"
+        android:textSize="27sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/profile_username"
+        android:layout_width="134dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="73dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="204dp"
+        android:rotationX="21"
+        android:rotationY="8"
+        android:text="USERNAME"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_image" />
+
+    <TextView
+        android:id="@+id/profile_insta"
+        android:layout_width="138dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="73dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="200dp"
+        android:layout_marginBottom="131dp"
+        android:rotationX="21"
+        android:rotationY="8"
+        android:text="INSTAGRAM NICKNAME"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toTopOf="@+id/search"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_username" />
+</androidx.constraintlayout.widget.ConstraintLayout>
